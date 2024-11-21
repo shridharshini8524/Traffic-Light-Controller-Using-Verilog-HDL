@@ -1,4 +1,4 @@
-   Traffic-Light-Controller-Using-Verilog-HDL
+          Traffic-Light-Controller-Using-Verilog-HDL
    
 Aim:
 
