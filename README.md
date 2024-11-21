@@ -9,6 +9,7 @@ Apparatus Required:
 Vivado 2023.1 or equivalent Verilog simulation tool.
 Computer system with a suitable operating system.
 FPGA board (optional for hardware verification).
+
 Procedure:
 
 Launch Vivado 2023.1:
@@ -87,7 +88,8 @@ module traffic_light_controller (
             end
         endcase
     end
-endmodule
+    endmodule
+    
 output:
 
 ![image](https://github.com/user-attachments/assets/45eda408-03d4-47c1-9ef5-bac2382c5cf9)
@@ -134,8 +136,8 @@ module traffic_light_controller_tb;
     initial begin
         $monitor("Time=%0t | Lights (R Y G) = %b", $time, lights);
     end
-
-endmodule
+    endmodule
+    
 output:
 
 ![image](https://github.com/user-attachments/assets/b45d4382-68f3-4890-b67e-7d48eadb5df2)
@@ -143,4 +145,5 @@ output:
 
 
 Conclusion:
+
 In this experiment, a traffic light controller was successfully designed and simulated using Verilog HDL. The design controlled the traffic lights to switch between Green, Yellow, and Red in a cyclic manner based on timing intervals. The testbench verified that the traffic lights followed the correct sequence and timing. The simulation results confirm the correct functionality of the traffic light controller, demonstrating the effectiveness of Verilog HDL in designing FSM-based controllers for real-world applications.
